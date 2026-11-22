@@ -1,0 +1,398 @@
+{
+ "survivor_head": {
+  "cat": "Survivor",
+  "tris": 2164
+ },
+ "survivor_torso_L": {
+  "cat": "Survivor",
+  "tris": 2386
+ },
+ "survivor_torso_R": {
+  "cat": "Survivor",
+  "tris": 2410
+ },
+ "survivor_upperarm": {
+  "cat": "Survivor",
+  "tris": 564
+ },
+ "survivor_forearm": {
+  "cat": "Survivor",
+  "tris": 468
+ },
+ "survivor_hand_open": {
+  "cat": "Survivor",
+  "tris": 420
+ },
+ "survivor_hand_closed": {
+  "cat": "Survivor",
+  "tris": 452
+ },
+ "survivor_skull_L": {
+  "cat": "Gore",
+  "tris": 1140
+ },
+ "survivor_skull_R": {
+  "cat": "Gore",
+  "tris": 1164
+ },
+ "survivor_brain": {
+  "cat": "Organs",
+  "tris": 1100
+ },
+ "wound_shoulder": {
+  "cat": "Gore",
+  "tris": 892
+ },
+ "wound_arm_end": {
+  "cat": "Gore",
+  "tris": 696
+ },
+ "wound_neck_body": {
+  "cat": "Gore",
+  "tris": 1550
+ },
+ "wound_neck_head": {
+  "cat": "Gore",
+  "tris": 1030
+ },
+ "wound_stuffing_shoulder": {
+  "cat": "Gore",
+  "tris": 930
+ },
+ "wound_stuffing_arm": {
+  "cat": "Gore",
+  "tris": 930
+ },
+ "wound_stuffing_neck": {
+  "cat": "Gore",
+  "tris": 930
+ },
+ "organ_heart": {
+  "cat": "Organs",
+  "tris": 866
+ },
+ "organ_lung_L": {
+  "cat": "Organs",
+  "tris": 416
+ },
+ "organ_lung_R": {
+  "cat": "Organs",
+  "tris": 416
+ },
+ "organ_stomach": {
+  "cat": "Organs",
+  "tris": 376
+ },
+ "organ_liver": {
+  "cat": "Organs",
+  "tris": 396
+ },
+ "organ_intestine_segment": {
+  "cat": "Organs",
+  "tris": 360
+ },
+ "organ_intestine_end": {
+  "cat": "Organs",
+  "tris": 336
+ },
+ "organ_spine_segment": {
+  "cat": "Organs",
+  "tris": 184
+ },
+ "bone_shard_1": {
+  "cat": "Organs",
+  "tris": 20
+ },
+ "bone_shard_2": {
+  "cat": "Organs",
+  "tris": 20
+ },
+ "bone_shard_3": {
+  "cat": "Organs",
+  "tris": 20
+ },
+ "flesh_chunk_1": {
+  "cat": "Organs",
+  "tris": 20
+ },
+ "flesh_chunk_2": {
+  "cat": "Organs",
+  "tris": 20
+ },
+ "flesh_chunk_3": {
+  "cat": "Organs",
+  "tris": 20
+ },
+ "stuffing_puff": {
+  "cat": "Organs",
+  "tris": 100
+ },
+ "butcher_body": {
+  "cat": "Monsters",
+  "tris": 6216
+ },
+ "butcher_upperarm": {
+  "cat": "Monsters",
+  "tris": 464
+ },
+ "butcher_forearm": {
+  "cat": "Monsters",
+  "tris": 464
+ },
+ "butcher_hand_open": {
+  "cat": "Monsters",
+  "tris": 536
+ },
+ "butcher_hand_closed": {
+  "cat": "Monsters",
+  "tris": 536
+ },
+ "stitchface_body": {
+  "cat": "Monsters",
+  "tris": 4452
+ },
+ "stitchface_upperarm": {
+  "cat": "Monsters",
+  "tris": 192
+ },
+ "stitchface_forearm": {
+  "cat": "Monsters",
+  "tris": 192
+ },
+ "stitchface_hand_open": {
+  "cat": "Monsters",
+  "tris": 468
+ },
+ "stitchface_hand_closed": {
+  "cat": "Monsters",
+  "tris": 660
+ },
+ "crawler_body": {
+  "cat": "Monsters",
+  "tris": 1924
+ },
+ "crawler_upperarm": {
+  "cat": "Monsters",
+  "tris": 360
+ },
+ "crawler_forearm": {
+  "cat": "Monsters",
+  "tris": 360
+ },
+ "crawler_hand_open": {
+  "cat": "Monsters",
+  "tris": 268
+ },
+ "crawler_hand_closed": {
+  "cat": "Monsters",
+  "tris": 268
+ },
+ "hat_party": {
+  "cat": "Cosmetics",
+  "tris": 356
+ },
+ "hat_hardhat": {
+  "cat": "Cosmetics",
+  "tris": 832
+ },
+ "hat_crown": {
+  "cat": "Cosmetics",
+  "tris": 140
+ },
+ "hat_traffic_cone": {
+  "cat": "Cosmetics",
+  "tris": 176
+ },
+ "hat_bucket": {
+  "cat": "Cosmetics",
+  "tris": 344
+ },
+ "hat_chef": {
+  "cat": "Cosmetics",
+  "tris": 1140
+ },
+ "mask_hockey": {
+  "cat": "Cosmetics",
+  "tris": 1134
+ },
+ "mask_gas": {
+  "cat": "Cosmetics",
+  "tris": 1120
+ },
+ "mask_surgical": {
+  "cat": "Cosmetics",
+  "tris": 384
+ },
+ "eyes_glowing": {
+  "cat": "Cosmetics",
+  "tris": 264
+ },
+ "face_stitches_X": {
+  "cat": "Cosmetics",
+  "tris": 80
+ },
+ "respawn_needle": {
+  "cat": "Effects",
+  "tris": 144
+ },
+ "computer_terminal": {
+  "cat": "Props",
+  "tris": 4930
+ },
+ "mirror_frame": {
+  "cat": "Props",
+  "tris": 688
+ },
+ "shop_stand": {
+  "cat": "Props",
+  "tris": 1368
+ },
+ "mode_screen": {
+  "cat": "Props",
+  "tris": 196
+ },
+ "loading_wall": {
+  "cat": "Effects",
+  "tris": 3520
+ },
+ "ceiling_light": {
+  "cat": "Props",
+  "tris": 172
+ },
+ "emergency_light": {
+  "cat": "Props",
+  "tris": 340
+ },
+ "surgical_table": {
+  "cat": "Props",
+  "tris": 456
+ },
+ "glass_tank_broken": {
+  "cat": "Props",
+  "tris": 256
+ },
+ "jar": {
+  "cat": "Props",
+  "tris": 104
+ },
+ "metal_shelf": {
+  "cat": "Props",
+  "tris": 1344
+ },
+ "metal_barrel": {
+  "cat": "Props",
+  "tris": 484
+ },
+ "metal_crate": {
+  "cat": "Props",
+  "tris": 1092
+ },
+ "hanging_chain": {
+  "cat": "Props",
+  "tris": 1656
+ },
+ "warning_sign": {
+  "cat": "Props",
+  "tris": 436
+ },
+ "warning_sign_noentry": {
+  "cat": "Props",
+  "tris": 412
+ },
+ "warning_sign_subjects": {
+  "cat": "Props",
+  "tris": 1152
+ },
+ "sign_testing_area": {
+  "cat": "Props",
+  "tris": 668
+ },
+ "blood_bucket": {
+  "cat": "Props",
+  "tris": 236
+ },
+ "body_bag": {
+  "cat": "Props",
+  "tris": 452
+ },
+ "trash_pile": {
+  "cat": "Props",
+  "tris": 536
+ },
+ "wall_straight": {
+  "cat": "Map",
+  "tris": 636
+ },
+ "wall_spawn": {
+  "cat": "Map",
+  "tris": 552
+ },
+ "wall_corner": {
+  "cat": "Map",
+  "tris": 132
+ },
+ "wall_doorway": {
+  "cat": "Map",
+  "tris": 1164
+ },
+ "wall_window": {
+  "cat": "Map",
+  "tris": 989
+ },
+ "floor_tile": {
+  "cat": "Map",
+  "tris": 404
+ },
+ "ceiling_tile": {
+  "cat": "Map",
+  "tris": 248
+ },
+ "catwalk_straight": {
+  "cat": "Map",
+  "tris": 328
+ },
+ "catwalk_corner": {
+  "cat": "Map",
+  "tris": 392
+ },
+ "ladder": {
+  "cat": "Map",
+  "tris": 224
+ },
+ "pipe_straight": {
+  "cat": "Map",
+  "tris": 308
+ },
+ "pipe_corner": {
+  "cat": "Map",
+  "tris": 200
+ },
+ "pipe_T": {
+  "cat": "Map",
+  "tris": 364
+ },
+ "valve_wheel": {
+  "cat": "Map",
+  "tris": 208
+ },
+ "vent_straight": {
+  "cat": "Map",
+  "tris": 328
+ },
+ "vent_corner": {
+  "cat": "Map",
+  "tris": 304
+ },
+ "vent_grate": {
+  "cat": "Map",
+  "tris": 132
+ },
+ "tower_section": {
+  "cat": "Map",
+  "tris": 664
+ },
+ "wall_plain": {
+  "cat": "Map",
+  "tris": 96
+ }
+}
