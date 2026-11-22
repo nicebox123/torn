@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TORN</title>
+<style>
+  :root { --bg: #0E1212; --fg: #E8E2D6; --red: #8A0303; --green: #3CFF6E; --dim: #9a9a96; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg); font-family: "Courier New", monospace; overflow: hidden; }
+  canvas { display: block; }
+  #menu { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; background: radial-gradient(ellipse at center, #1a1f1f 0%, #050606 70%); z-index: 10; padding: 16px; box-sizing: border-box; }
+  .card { max-width: 560px; width: 100%; text-align: center; }
+  h1 { font-size: clamp(64px, 18vw, 120px); letter-spacing: 0.15em; margin: 0 0 4px; color: #cfc8b8; text-shadow: 0 0 2px #000, 0 6px 0 var(--red); }
+  .sub { color: var(--dim); margin-bottom: 28px; font-size: 14px; }
+  button { display: block; width: 100%; margin: 10px 0; padding: 18px; font: bold 20px "Courier New", monospace; letter-spacing: 0.1em; color: var(--fg); background: #2E302C; border: 2px solid #4A4F4E; cursor: pointer; }
+  button.vr { background: var(--red); border-color: #b5302a; }
+  button:disabled { opacity: 0.45; cursor: not-allowed; }
+  .help { text-align: left; font-size: 13px; line-height: 1.6; color: var(--dim); margin-top: 22px; border-top: 1px dashed #333; padding-top: 14px; }
+  .help b { color: var(--fg); }
+  .warn { color: #ff8a7a; font-size: 12px; margin-top: 10px; }
+  #crosshair { position: fixed; left: 50%; top: 50%; width: 6px; height: 6px; margin: -3px; border-radius: 50%; background: rgba(232,226,214,0.7); display: none; z-index: 5; pointer-events: none; }
+</style>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<div id="menu"><div class="card">
+  <h1>TORN</h1>
+  <div class="sub">contains graphic violence &amp; gore (can be turned off at the Computer)</div>
+  <button id="vr" class="vr" disabled>CHECKING FOR VR...</button>
+  <button id="desk">PLAY ON DESKTOP (TEST MODE)</button>
+  <div class="help">
+    <b>VR:</b> push the ground with your hands to move. Grip = grab / tear / pick up. Trigger = squeeze what you hold.
+    Monster ability = both triggers. Right stick = turn. Shake hard when grabbed to break free.<br>
+    <b>Desktop test:</b> mouse look, WASD move, Space jump, hold Left/Right mouse = reach &amp; grab with that hand,
+    hold Q/E = pull hands apart (tear), R = ability, F = press the key / item you're looking at, T = cycle monster (test).
+  </div>
+  <div class="warn" id="warn"></div>
+</div></div>
+<div id="crosshair"></div>
+<script type="module">
+  import { Game } from './js/main.js';
+  const game = window.game = new Game();
+  const vrBtn = document.getElementById('vr'), deskBtn = document.getElementById('desk'), menu = document.getElementById('menu');
+  const go = (desktop) => { menu.style.display = 'none'; document.getElementById('crosshair').style.display = desktop ? 'block' : 'none'; game.start(desktop); };
+  if (navigator.xr) navigator.xr.isSessionSupported('immersive-vr').then(ok => { vrBtn.disabled = !ok; vrBtn.textContent = ok ? 'ENTER VR' : 'VR NOT AVAILABLE HERE'; });
+  else { vrBtn.textContent = 'VR NOT AVAILABLE HERE'; if (!isSecureContext) document.getElementById('warn').textContent = 'VR needs https:// (GitHub Pages is fine).'; }
+  vrBtn.onclick = async () => {
+    try {
+      const session = await navigator.xr.requestSession('immersive-vr', { optionalFeatures: ['local-floor', 'bounded-floor'] });
+      await game.renderer.xr.setSession(session);
+      session.addEventListener('end', () => location.reload());
+      go(false);
+    } catch (e) { document.getElementById('warn').textContent = 'Could not start VR: ' + e.message; }
+  };
+  deskBtn.onclick = () => go(true);
+</script>
+</body>
+</html>
